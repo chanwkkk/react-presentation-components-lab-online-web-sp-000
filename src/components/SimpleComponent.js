@@ -8,6 +8,10 @@ export default class SimpleComponent extends Component{
         mood: "happy"
     }
 
+    handleClick = () =>{
+      this.setState({mood: ("happy"? "sad" : "happy") })
+    }
+
     render(){
         return(
             <div onClick={this.handleClick}>
